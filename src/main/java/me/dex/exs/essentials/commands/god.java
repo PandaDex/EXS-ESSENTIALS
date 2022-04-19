@@ -20,11 +20,11 @@ public class god implements CommandExecutor {
             if (this.plugin.hasGodPlayers() &&
                     this.plugin.getGodPlayers().contains(player)) {
                 this.plugin.removeGodPlayer(player);
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7 God mode &cWylaczono"));
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7God mode &cWylaczono"));
                 return true;
             }
             this.plugin.addGodPlayer(player);
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7 God mode &aWlaczono"));
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7God mode &aWlaczono"));
             return true;
         }
         return false;
