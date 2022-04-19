@@ -15,14 +15,18 @@ public class god implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        Player player = (Player)sender;
-            if(this.plugin.hasGodPlayers() &&
-            this.plugin.getGodPlayers().contains(player)){
+        Player player = (Player) sender;
+        if (player.hasPermission("dex.admin.god")) {
+            if (this.plugin.hasGodPlayers() &&
+                    this.plugin.getGodPlayers().contains(player)) {
                 this.plugin.removeGodPlayer(player);
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7 God mode &cWylaczono"));
+                return true;
             }
             this.plugin.addGodPlayer(player);
             player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7 God mode &aWlaczono"));
-            return false;
+            return true;
+        }
+        return false;
     }
 }
