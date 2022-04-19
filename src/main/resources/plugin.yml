@@ -1,0 +1,39 @@
+name: EXS-ESSENTIALS
+version: 1.0.0
+main: me.dex.exs.essentials.main.Main
+api-version: 1.16
+prefix: EXS-ESSENTIALS
+authors: [ Panda_Dex_ ]
+commands:
+  gm:
+    aliases: [ ]
+    description: zmienia twoj gamemode.
+    permission: dex.admin.gm
+  day:
+    aliases: [ ]
+    description: robi dzien
+    permission: dex.world
+  night:
+      aliases: [ ]
+      description: robi noc
+      permission: dex.admin.world
+  nv:
+    aliases: [ ]
+    description: Aktywuje Night Vision
+    permission: dex.admin.nv
+  sun:
+    aliases: [ ]
+    description: Zmienia pogode na sloneczna
+    permission: dex.admin.world
+  fly:
+    aliases: [ ]
+    description: Aktywuje fly
+    permission: dex.admin.fly
+  flySpeed:
+    aliases: [ ]
+    description: Zmienia szybkosc lotu
+    permission: dex.admin.flySpeed
+  god:
+    aliases: [ ]
+    description: Aktywuje god mode
+    permission: dex.admin.god
