@@ -16,7 +16,7 @@ public class god implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player player = (Player) sender;
-        if (player.hasPermission("dex.admin.god")) {
+        if (player.hasPermission("exs.admin.god")) {
             if (this.plugin.hasGodPlayers() &&
                     this.plugin.getGodPlayers().contains(player)) {
                 this.plugin.removeGodPlayer(player);

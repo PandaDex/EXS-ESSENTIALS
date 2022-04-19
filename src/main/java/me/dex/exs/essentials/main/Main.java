@@ -29,6 +29,7 @@ public final class Main extends JavaPlugin{
         new flySpeed(this);
         new god(this);
         new exs(this);
+        new heal(this);
         registerEvents();
     }
 

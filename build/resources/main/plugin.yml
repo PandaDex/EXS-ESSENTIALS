@@ -8,36 +8,40 @@ website: https://github.com/PandaDex/EXS-ESSENTIALS
 commands:
   gm:
     aliases: [ ]
-    description: Zmienia gamemode gracza
-    permission: dex.admin.gm
+    description: Zmienia gamemode gracza.
+    permission: exs.admin.gm
   day:
     aliases: [ ]
     description: Zmienia pore dnia na dzien.
-    permission: dex.admin.world
+    permission: exs.admin.world
   night:
       aliases: [ ]
       description: Zmienia pore dnia na noc.
-      permission: dex.admin.world
+      permission: exs.admin.world
   nv:
     aliases: [ ]
-    description: Aktywuje Night Vision
-    permission: dex.admin.nv
+    description: Aktywuje Night Vision.
+    permission: exs.admin.nv
   sun:
     aliases: [ ]
-    description: Zmienia pogode na sloneczna
-    permission: dex.admin.world
+    description: Zmienia pogode na sloneczna.
+    permission: exs.admin.world
   fly:
     aliases: [ ]
-    description: Aktywuje fly
-    permission: dex.admin.fly
+    description: Aktywuje fly.
+    permission: exs.admin.fly
   flySpeed:
     aliases: [ ]
-    description: Zmienia szybkosc lotu
-    permission: dex.admin.flySpeed
+    description: Zmienia szybkosc lotu.
+    permission: exs.admin.flySpeed
   god:
     aliases: [ ]
-    description: Aktywuje god mode
-    permission: dex.admin.god
+    description: Aktywuje god mode.
+    permission: exs.admin.god
   exs:
     aliases: [ ]
-    description: Wyswietla informacje o pluginie
+    description: Wyswietla informacje o pluginie.
+  heal:
+    aliases: [ ]
+    description: Ustawia stan zdrowia gracza na 100%.
+    permission: exs.admin.heal
