@@ -19,8 +19,8 @@ public class exs implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player) sender;
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Author: &aPandaDex_"));
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Version: &a1.0.0"));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Autor: &aPandaDex_"));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Wersja: &a1.0.0"));
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Repo: &ahttps://github.com/PandaDex/EXS-ESSENTIALS"));
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
         return true;
