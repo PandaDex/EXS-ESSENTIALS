@@ -27,6 +27,7 @@ public final class Main extends JavaPlugin{
         new sun(this);
         new fly(this);
         new flySpeed(this);
+        new god(this);
         registerEvents();
     }
 

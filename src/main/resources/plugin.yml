@@ -38,6 +38,3 @@ commands:
     aliases: [ ]
     description: Aktywuje god mode
     permission: dex.admin.god
-  exs:
-    aliases: [ ]
-    description: Wyswietla informacje o pluginie
