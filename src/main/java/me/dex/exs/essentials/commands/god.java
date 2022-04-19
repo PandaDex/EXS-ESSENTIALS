@@ -11,6 +11,7 @@ public class god implements CommandExecutor {
 
     public god(Main plugin) {
         this.plugin = plugin;
+        plugin.getCommand("god").setExecutor((CommandExecutor)this);
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
