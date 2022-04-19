@@ -8,15 +8,15 @@ website: https://github.com/PandaDex/EXS-ESSENTIALS
 commands:
   gm:
     aliases: [ ]
-    description: zmienia twoj gamemode.
+    description: Zmienia gamemode gracza
     permission: dex.admin.gm
   day:
     aliases: [ ]
-    description: robi dzien
-    permission: dex.world
+    description: Zmienia pore dnia na dzien.
+    permission: dex.admin.world
   night:
       aliases: [ ]
-      description: robi noc
+      description: Zmienia pore dnia na noc.
       permission: dex.admin.world
   nv:
     aliases: [ ]
