@@ -23,6 +23,6 @@ public class nv implements CommandExecutor {
         World w = p.getWorld();
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7trzymales/as efekt: &aWidzenie w ciemnosci"));
         p.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 1000000, 255, true));
-        return false;
+        return true;
     }
 }

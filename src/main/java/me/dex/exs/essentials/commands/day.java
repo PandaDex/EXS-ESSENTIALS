@@ -22,6 +22,6 @@ public class day implements CommandExecutor {
         World w = p.getWorld();
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Ustawiles/as czas na: &aDzien"));
         w.setTime(1000L);
-        return false;
+        return true;
     }
 }

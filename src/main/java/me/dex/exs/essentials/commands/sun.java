@@ -22,6 +22,6 @@ public class sun implements CommandExecutor {
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Ustawiono pogode na: &aSloneczna "));
         w.setStorm(false);
         w.setThundering(false);
-        return false;
+        return true;
     }
 }

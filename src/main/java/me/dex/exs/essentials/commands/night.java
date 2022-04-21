@@ -22,6 +22,6 @@ public class night implements CommandExecutor {
         World w = p.getWorld();
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Ustawiles/as czas na: &aNoc"));
         w.setTime(13000L);
-        return false;
+        return true;
     }
 }

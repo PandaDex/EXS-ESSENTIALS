@@ -28,6 +28,6 @@ public class fly implements CommandExecutor {
             p.setFlySpeed(0.1F);
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Latanie: &aWlaczone "));
         }
-        return false;
+        return true;
     }
 }

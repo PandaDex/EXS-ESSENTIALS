@@ -41,6 +41,6 @@ public class flySpeed implements CommandExecutor {
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Predkosc lotu musi byc podana w przedziale &aod 1 do 10"));
             }
         }
-        return false;
+        return true;
     }
 }

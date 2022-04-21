@@ -18,7 +18,7 @@ public class feed implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player)sender;
         p.setFoodLevel(20);
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Zostales nakarmiony!"));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Zostales/as nakarmiony!"));
         return true;
     }
 }
