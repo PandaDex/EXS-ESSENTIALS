@@ -1,10 +1,10 @@
 name: EXS-ESSENTIALS
-version: 1.1
+version: 1.2
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
 authors: [ PandaDex_ ]
-website: https://github.com/PandaDex/EXS-ESSENTIALS
+website: https://www.spigotmc.org/resources/exs-essentials.101530/
 commands:
   gm:
     aliases: [ ]

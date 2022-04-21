@@ -1,5 +1,6 @@
 package me.dex.exs.essentials.main;
 
+import me.dex.exs.essentials.Utils.Updater;
 import me.dex.exs.essentials.commands.*;
 import me.dex.exs.essentials.events.GodEvent;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,6 +21,9 @@ public final class Main extends JavaPlugin{
 
     @Override
     public void onEnable() {
+        PRNTCON("Witaj w EXS!");
+        PRNTCON("Wyszukiwanie aktualizacji...");
+        CheckUpdate();
         new gm(this);
         new day(this);
         new night(this);
@@ -36,8 +40,25 @@ public final class Main extends JavaPlugin{
 
     @Override
     public void onDisable() {
-        getLogger().info("Bye! :)");
+        PRNTCON("Bye!");
     }
+
+    public void PRNTCON(String msg) {
+        getServer().getConsoleSender().sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "EXS" + ChatColor.GRAY + "]" + ChatColor.RESET + " " + msg);
+    }
+
+    public void CheckUpdate(){
+        (new Updater(this, 101530)).getLatestVersion(version -> {
+                    if (getDescription().getVersion().equalsIgnoreCase(version)) {
+                        PRNTCON("Uzywasz najnowszej wersji!");
+                    }else{
+                        PRNTCON("Twoja wersja EXS jest " + ChatColor.DARK_RED + "nieaktualna!");
+                        PRNTCON("Najnowsza wersja to: " + ChatColor.GREEN + version);
+                        PRNTCON("Twoja wersja to: " + ChatColor.RED + getDescription().getVersion());
+                        PRNTCON("Zaktualizuj tutaj: " + ChatColor.GREEN + "https://www.spigotmc.org/resources/exs-essentials.101530/");
+                    }
+                });
+        }
 
     //god
     public void addGodPlayer(Player player) {
