@@ -1,5 +1,5 @@
 name: EXS-ESSENTIALS
-version: 1.0.0
+version: 1.1
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
