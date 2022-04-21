@@ -9,39 +9,44 @@ commands:
   gm:
     aliases: [ ]
     description: Zmienia gamemode gracza.
-    permission: exs.admin.gm
+    permission: exs.gm
   day:
     aliases: [ ]
     description: Zmienia pore dnia na dzien.
-    permission: exs.admin.world
+    permission: exs.world
   night:
       aliases: [ ]
       description: Zmienia pore dnia na noc.
-      permission: exs.admin.world
+      permission: exs.world
   nv:
     aliases: [ ]
     description: Aktywuje Night Vision.
-    permission: exs.admin.nv
+    permission: exs.nv
   sun:
     aliases: [ ]
     description: Zmienia pogode na sloneczna.
-    permission: exs.admin.world
+    permission: exs.world
   fly:
     aliases: [ ]
     description: Aktywuje fly.
-    permission: exs.admin.fly
+    permission: exs.fly
   flySpeed:
     aliases: [ ]
     description: Zmienia szybkosc lotu.
-    permission: exs.admin.flySpeed
+    permission: exs.flySpeed
   god:
     aliases: [ ]
     description: Aktywuje god mode.
-    permission: exs.admin.god
+    permission: exs.god
   exs:
     aliases: [ ]
     description: Wyswietla informacje o pluginie.
+    permission: exs.pluginInfo
   heal:
     aliases: [ ]
     description: Ustawia stan zdrowia gracza na 100%.
-    permission: exs.admin.heal
+    permission: exs.heal
+  feed:
+    aliases: [ ]
+    description: Ustawia stan nakarmienia gracza na 100%.
+    permission: exs.feed
