@@ -20,17 +20,11 @@ public class heal implements CommandExecutor {
     }
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player)sender;
-        if(p.hasPermission("exs.admin.heal")) {
             for (PotionEffect effect : p.getActivePotionEffects())
                 p.removePotionEffect(effect.getType());
             p.setHealth(20.0D);
-            p.setFoodLevel(20);
             p.setFireTicks(0);
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Zostales wyleczony!"));
             return true;
         }
-        return false;
     }
-
-
-}

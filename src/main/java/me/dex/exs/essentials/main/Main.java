@@ -30,6 +30,7 @@ public final class Main extends JavaPlugin{
         new god(this);
         new exs(this);
         new heal(this);
+        new feed(this);
         registerEvents();
     }
 
