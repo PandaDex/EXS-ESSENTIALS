@@ -21,7 +21,7 @@ public class exs implements CommandExecutor {
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Autor: &aPandaDex_"));
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Wersja: &a" + this.plugin.getDescription().getVersion()));
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Strona: &ahttps://www.spigotmc.org/resources/exs-essentials.101530/"));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Strona: &a" + this.plugin.getDescription().getWebsite()));
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
         return true;
     }

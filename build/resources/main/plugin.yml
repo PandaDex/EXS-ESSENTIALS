@@ -1,5 +1,5 @@
 name: EXS-ESSENTIALS
-version: 1.3
+version: 1.4
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
@@ -50,3 +50,7 @@ commands:
     aliases: [ ]
     description: Ustawia stan nakarmienia gracza na 100%.
     permission: exs.feed
+  tp:
+    aliases: [ ]
+    description: Teleportacja gracza do innego gracza.
+    permission: exs.tp

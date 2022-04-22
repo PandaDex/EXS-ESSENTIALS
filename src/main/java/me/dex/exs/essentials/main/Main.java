@@ -22,8 +22,6 @@ public final class Main extends JavaPlugin{
 
     @Override
     public void onEnable() {
-        PRNTCON("EXS Zaladowany!");
-        CheckUpdate();
         new gm(this);
         new day(this);
         new night(this);
@@ -35,7 +33,10 @@ public final class Main extends JavaPlugin{
         new exs(this);
         new heal(this);
         new feed(this);
+        new tp(this);
         registerEvents();
+        PRNTCON("EXS Zaladowany!");
+        CheckUpdate();
     }
 
     @Override
