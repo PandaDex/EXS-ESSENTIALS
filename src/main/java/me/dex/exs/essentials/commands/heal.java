@@ -16,7 +16,7 @@ public class heal implements CommandExecutor {
 
     public heal(Main plugin) {
         this.plugin = plugin;
-        plugin.getCommand("heal").setExecutor((CommandExecutor)this);
+        plugin.getCommand("heal").setExecutor(this);
     }
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player)sender;

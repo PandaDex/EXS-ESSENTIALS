@@ -12,7 +12,7 @@ public class feed implements CommandExecutor {
 
     public feed(Main plugin) {
         this.plugin = plugin;
-        plugin.getCommand("feed").setExecutor((CommandExecutor)this);
+        plugin.getCommand("feed").setExecutor(this);
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

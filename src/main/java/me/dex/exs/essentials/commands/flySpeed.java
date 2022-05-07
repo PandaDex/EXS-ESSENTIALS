@@ -26,7 +26,6 @@ public class flySpeed implements CommandExecutor {
         }
         if (args.length == 1) {
             boolean var6 = true;
-
             int speed;
             try {
                 speed = Integer.parseInt(args[0]);

@@ -14,7 +14,7 @@ public class tp implements CommandExecutor {
 
     public tp(final Main plugin) {
         this.plugin = plugin;
-        plugin.getCommand("tp").setExecutor((CommandExecutor)this);
+        plugin.getCommand("tp").setExecutor(this);
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
