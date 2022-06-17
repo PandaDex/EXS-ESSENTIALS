@@ -1,5 +1,5 @@
 name: EXS-ESSENTIALS
-version: 1.4-DEV
+version: 1.5
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
@@ -42,6 +42,7 @@ commands:
     aliases: [ ]
     description: Wyswietla informacje o pluginie.
     permission: exs.pluginInfo
+    usage: \u00A77[\u00A7aEXS\u00A77] \u00A7c/<command> [info | update | reload]
   heal:
     aliases: [ ]
     description: Ustawia stan zdrowia gracza na 100%.
