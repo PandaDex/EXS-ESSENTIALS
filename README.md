@@ -4,6 +4,14 @@ EssentialsX type plugin but in Polish and with more features(Not now)
 
 
 
+
+
+
+
+
+
+
+
 Spis uprawnień wraz z komendami:
 + /day - exs.world.time
 + /exs - brak
