@@ -51,6 +51,9 @@ public class exs implements CommandExecutor {
                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Twoja wersja: &c" + this.plugin.getDescription().getVersion()));
                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Zaktualizuj tutaj:&a https://www.spigotmc.org/resources/exs-essentials.101530/"));
                 }
+                else {
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Twoja wersja EXS jest &aaktualna"));
+                }
             });
             return true;
             }

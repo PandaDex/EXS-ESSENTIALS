@@ -1,9 +1,9 @@
 name: EXS-ESSENTIALS
-version: 1.5
+version: 1.6
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
-authors: [ PandaDex_ ]
+authors: [ Panda_Dex_ ]
 website: https://www.spigotmc.org/resources/exs-essentials.101530/
 commands:
   gm:
@@ -13,11 +13,11 @@ commands:
   day:
     aliases: [ ]
     description: Zmienia pore dnia na dzien.
-    permission: exs.world
+    permission: exs.world.time
   night:
       aliases: [ ]
       description: Zmienia pore dnia na noc.
-      permission: exs.world
+      permission: exs.world.time
   nv:
     aliases: [ ]
     description: Aktywuje Night Vision.
@@ -25,7 +25,7 @@ commands:
   sun:
     aliases: [ ]
     description: Zmienia pogode na sloneczna.
-    permission: exs.world
+    permission: exs.world.weather
   fly:
     aliases: [ ]
     description: Aktywuje fly.
@@ -41,7 +41,6 @@ commands:
   exs:
     aliases: [ ]
     description: Wyswietla informacje o pluginie.
-    permission: exs.pluginInfo
     usage: §7[§aEXS§7] §c/<command> [info | update | reload]
   heal:
     aliases: [ ]
@@ -55,3 +54,7 @@ commands:
     aliases: [ ]
     description: Teleportacja gracza do innego gracza.
     permission: exs.tp
+  msg:
+    aliases: [ ]
+    description: Wysyła wiadomość do innego gracza.
+    permission: exs.msg

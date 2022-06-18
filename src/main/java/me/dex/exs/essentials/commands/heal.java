@@ -24,7 +24,7 @@ public class heal implements CommandExecutor {
                 p.removePotionEffect(effect.getType());
             p.setHealth(20.0D);
             p.setFireTicks(0);
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Zostales/as wyleczony!"));
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Zostales wyleczony!"));
             return true;
         }
     }

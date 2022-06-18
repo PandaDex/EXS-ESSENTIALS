@@ -19,10 +19,10 @@ public class gm implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player)sender;
         if (p.getGameMode().equals(GameMode.CREATIVE)) {
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Ustawiles/as swoj tryb gry na: &aPrzetrwanie"));
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Ustawiles swoj tryb gry na: &aPrzetrwanie"));
             p.setGameMode(GameMode.SURVIVAL);
         } else if (p.getGameMode().equals(GameMode.SURVIVAL)) {
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Ustawiles/as swoj tryb gry na: &aKreatywny"));
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Ustawiles swoj tryb gry na: &aKreatywny"));
             p.setGameMode(GameMode.CREATIVE);
             return true;
         }

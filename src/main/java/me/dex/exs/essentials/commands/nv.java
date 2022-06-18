@@ -21,7 +21,7 @@ public class nv implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player)sender;
         World w = p.getWorld();
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7trzymales/as efekt: &aWidzenie w ciemnosci"));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7trzymales efekt: &aWidzenie w ciemnosci"));
         p.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 1000000, 255, true));
         return true;
     }

@@ -34,6 +34,7 @@ public final class Main extends JavaPlugin{
         new heal(this);
         new feed(this);
         new tp(this);
+        new msg(this);
         registerEvents();
         PRNTCON("EXS Zaladowany!");
         CheckUpdate();
