@@ -41,7 +41,7 @@ public class exs implements CommandExecutor {
             if(args[0].equalsIgnoreCase("update")) {
             Player p = (Player) sender;
             if(!p.hasPermission("exs.update")) {
-                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &cNie masz uprawnien do tej komendy"));
+                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &cNie masz uprawnien do tej komendy!"));
                 return true; }
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Wyszukiwanie aktualizacji..."));
             (new Updater(this.plugin, 101530)).getLatestVersion(version -> {
@@ -61,7 +61,7 @@ public class exs implements CommandExecutor {
             if (args[0].equalsIgnoreCase("reload")) {
             Player p = (Player) sender;
             if(!p.hasPermission("exs.reload")) {
-                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &cNie masz uprawnien do tej komendy"));
+                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &cNie masz uprawnien do tej komendy!"));
                 return true; }
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Przeladowanie..."));
             this.plugin.reloadConfig();
