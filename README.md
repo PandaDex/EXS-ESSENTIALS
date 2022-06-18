@@ -27,3 +27,4 @@ Spis uprawnień wraz z komendami:
 + /nv exs.nv
 + /sun - exs.world.weather
 + /tp - exs.tp
++ /msg - exs.msg
