@@ -5,56 +5,70 @@ api-version: 1.16
 prefix: EXS-ESSENTIALS
 authors: [ Panda_Dex_ ]
 website: https://www.spigotmc.org/resources/exs-essentials.101530/
+permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
 commands:
   gm:
     aliases: [ ]
     description: Zmienia gamemode gracza.
     permission: exs.gm
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   day:
     aliases: [ ]
     description: Zmienia pore dnia na dzien.
     permission: exs.world.time
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   night:
       aliases: [ ]
       description: Zmienia pore dnia na noc.
       permission: exs.world.time
+      permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   nv:
     aliases: [ ]
     description: Aktywuje Night Vision.
     permission: exs.nv
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   sun:
     aliases: [ ]
     description: Zmienia pogode na sloneczna.
     permission: exs.world.weather
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   fly:
     aliases: [ ]
     description: Aktywuje fly.
     permission: exs.fly
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   flySpeed:
     aliases: [ ]
     description: Zmienia szybkosc lotu.
     permission: exs.flySpeed
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   god:
     aliases: [ ]
     description: Aktywuje god mode.
     permission: exs.god
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   exs:
     aliases: [ ]
     description: Wyswietla informacje o pluginie.
     usage: \u00A77[\u00A7aEXS\u00A77] \u00A7c/<command> [info | update | reload]
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   heal:
     aliases: [ ]
     description: Ustawia stan zdrowia gracza na 100%.
     permission: exs.heal
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   feed:
     aliases: [ ]
     description: Ustawia stan nakarmienia gracza na 100%.
     permission: exs.feed
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   tp:
     aliases: [ ]
     description: Teleportacja gracza do innego gracza.
     permission: exs.tp
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   msg:
     aliases: [ ]
     description: Wysyła wiadomość do innego gracza.
     permission: exs.msg
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
