@@ -23,6 +23,7 @@ Spis uprawnień wraz z komendami:
 + /gm - exs.gm
 + /god - exs.god
 + /heal - exs.heal
++ /msg - exs.msg
 + /night - exs.world.time
 + /nv exs.nv
 + /sun - exs.world.weather
