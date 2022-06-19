@@ -1,5 +1,5 @@
 name: EXS-ESSENTIALS
-version: 1.6
+version: 1.7-DEV
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
@@ -71,4 +71,9 @@ commands:
     aliases: [ ]
     description: Wysyła wiadomość do innego gracza.
     permission: exs.msg
+    permission-message: §7[§c§lEXS§7] §cNie masz uprawnien do tej komendy!
+  kick:
+    aliases: [ ]
+    description: Wyrzuca gracza z serwera.
+    permission: exs.kick
     permission-message: §7[§c§lEXS§7] §cNie masz uprawnien do tej komendy!
