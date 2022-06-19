@@ -21,7 +21,7 @@ public class exs implements CommandExecutor {
             if(args.length == 0){
                 Player p = (Player) sender;
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
-                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Autor: &aPandaDex_"));
+                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Autor: &aPanda_Dex_"));
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Wersja: &a" + this.plugin.getDescription().getVersion()));
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Strona: &a" + this.plugin.getDescription().getWebsite()));
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
@@ -31,7 +31,7 @@ public class exs implements CommandExecutor {
             if(args[0].equalsIgnoreCase("info")) {
                 Player p = (Player) sender;
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
-                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Autor: &aPandaDex_"));
+                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Autor: &aPanda_Dex_"));
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Wersja: &a" + this.plugin.getDescription().getVersion()));
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Strona: &a" + this.plugin.getDescription().getWebsite()));
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&c-----------------------------------------------------"));
