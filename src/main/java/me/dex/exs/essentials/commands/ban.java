@@ -35,7 +35,8 @@ public class ban implements CommandExecutor {
                 sb.append(args[i]).append(" ");
             }
             String msg = sb.toString();
-            target.banPlayer(ChatColor.translateAlternateColorCodes('&',  "&cZostales zbanowany \n \n &7Przez: &c" + p.getName() + "\n &7Za: &c" + msg));
+            target.kickPlayer(ChatColor.translateAlternateColorCodes('&',  "&cZostales zbanowany \n \n &7Przez: &c" + p.getName() + "\n &7Powod: &c" + msg));
+            target.banPlayer(msg);
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &aGracz zbanowany!"));
             return true;
         }

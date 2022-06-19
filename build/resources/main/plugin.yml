@@ -77,3 +77,8 @@ commands:
     description: Wyrzuca gracza z serwera.
     permission: exs.kick
     permission-message: §7[§c§lEXS§7] §cNie masz uprawnien do tej komendy!
+  ban:
+    aliases: [ ]
+    description: Banuje gracza na serwerze.
+    permission: exs.ban
+    permission-message: §7[§c§lEXS§7] §cNie masz uprawnien do tej komendy!

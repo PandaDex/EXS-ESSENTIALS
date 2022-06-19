@@ -36,11 +36,9 @@ public class kick implements CommandExecutor {
                 sb.append(args[i]).append(" ");
             }
             String msg = sb.toString();
-            target.kickPlayer(ChatColor.translateAlternateColorCodes('&',  "&cZostales wyrzucony \n \n &7Przez: &c" + p.getName() + "\n &7Za: &c" + msg));
+            target.kickPlayer(ChatColor.translateAlternateColorCodes('&',  "&cZostales wyrzucony \n \n &7Przez: &c" + p.getName() + "\n &7Powod: &c" + msg));
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &aGracz wyrzucony!"));
         }
-
-
         return false;
     }
 }
