@@ -1,11 +1,10 @@
 name: EXS-ESSENTIALS
-version: 1.7-DEV
+version: 1.7
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
 authors: [ Panda_Dex_ ]
 website: https://www.spigotmc.org/resources/exs-essentials.101530/
-permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
 commands:
   gm:
     aliases: [ ]
@@ -81,4 +80,9 @@ commands:
     aliases: [ ]
     description: Banuje gracza na serwerze.
     permission: exs.ban
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
+  unban:
+    aliases: [ ]
+    description: Odbanuje gracza z serwera.
+    permission: exs.unban
     permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!

@@ -37,6 +37,7 @@ public final class Main extends JavaPlugin{
         new msg(this);
         new kick(this);
         new ban(this);
+        new unban(this);
         registerEvents();
         PRNTCON("EXS Zaladowany!");
         CheckUpdate();
