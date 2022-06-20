@@ -13,6 +13,7 @@ EssentialsX type plugin but in Polish and with more features(Not now)
 
 
 Spis uprawnień wraz z komendami:
++ /ban - exs.ban
 + /day - exs.world.time
 + /exs - brak
 + /exs reload - exs.reload
@@ -23,8 +24,10 @@ Spis uprawnień wraz z komendami:
 + /gm - exs.gm
 + /god - exs.god
 + /heal - exs.heal
++ /kick - exs.kick
 + /msg - exs.msg
 + /night - exs.world.time
 + /nv exs.nv
 + /sun - exs.world.weather
 + /tp - exs.tp
++ /unban - exs.unban
