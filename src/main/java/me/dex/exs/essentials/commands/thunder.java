@@ -6,23 +6,22 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 
-public class nv implements CommandExecutor {
+public class thunder implements CommandExecutor {
     private Main plugin;
 
-    public nv(Main plugin) {
+    public thunder(Main plugin) {
         this.plugin = plugin;
-        plugin.getCommand("nv").setExecutor(this);
+        plugin.getCommand("thunder").setExecutor(this);
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player)sender;
         World w = p.getWorld();
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Otrzymales efekt: &aWidzenie w ciemnosci"));
-        p.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 1000000, 255, true));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Ustawiono pogode na: &aBurzowa"));
+        w.setStorm(true);
+        w.setThundering(true);
         return true;
     }
 }

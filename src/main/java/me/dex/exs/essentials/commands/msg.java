@@ -37,7 +37,7 @@ public class msg implements CommandExecutor {
             }
             String msg = sb.toString();
             target.sendMessage(ChatColor.translateAlternateColorCodes('&',  "&a" + p.getName() + " &7=> &c" + target.getName() + "&7: " + msg));
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &aWiadomosc wyslana!"));
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&',  "&aJA" + " &7=> &c" + target.getName() + "&7: " + msg));
         }
     return false;
     }

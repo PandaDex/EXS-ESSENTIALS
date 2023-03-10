@@ -27,7 +27,11 @@ Spis uprawnień wraz z komendami:
 + /kick - exs.kick
 + /msg - exs.msg
 + /night - exs.world.time
++ /noon - exs.world.time
++ /midnight - exs.world.time
 + /nv exs.nv
 + /sun - exs.world.weather
++ /rain - exs.world.weather
++ /thunder - exs.world.weather
 + /tp - exs.tp
 + /unban - exs.unban

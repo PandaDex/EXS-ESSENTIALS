@@ -1,5 +1,5 @@
 name: EXS-ESSENTIALS
-version: 1.7
+version: 1.8
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
@@ -16,11 +16,21 @@ commands:
     description: Zmienia pore dnia na dzien.
     permission: exs.world.time
     permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
+  noon:
+    aliases: [ ]
+    description: Zmienia pore dnia na południe.
+    permission: exs.world.time
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   night:
       aliases: [ ]
       description: Zmienia pore dnia na noc.
       permission: exs.world.time
       permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
+  midnight:
+    aliases: [ ]
+    description: Zmienia pore dnia na północ.
+    permission: exs.world.time
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   nv:
     aliases: [ ]
     description: Aktywuje Night Vision.
@@ -29,6 +39,16 @@ commands:
   sun:
     aliases: [ ]
     description: Zmienia pogode na sloneczna.
+    permission: exs.world.weather
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
+  rain:
+    aliases: [ ]
+    description: Zmienia pogode na deszczowa.
+    permission: exs.world.weather
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
+  thunder:
+    aliases: [ ]
+    description: Zmienia pogode na burzowa .
     permission: exs.world.weather
     permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   fly:
@@ -86,3 +106,4 @@ commands:
     description: Odbanuje gracza z serwera.
     permission: exs.unban
     permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
+

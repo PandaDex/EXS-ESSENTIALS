@@ -1,6 +1,5 @@
 package me.dex.exs.essentials.main;
 
-import me.dex.exs.essentials.Utils.UpdateMsg;
 import me.dex.exs.essentials.Utils.Updater;
 import me.dex.exs.essentials.commands.*;
 import me.dex.exs.essentials.events.GodEvent;
@@ -39,6 +38,10 @@ public final class Main extends JavaPlugin{
         new kick(this);
         new ban(this);
         new unban(this);
+        new rain(this);
+        new thunder(this);
+        new noon(this);
+        new midnight(this);
         registerEvents();
         PRNTCON("EXS Zaladowany!");
         CheckUpdate();

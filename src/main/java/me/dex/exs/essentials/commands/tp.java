@@ -24,7 +24,7 @@ public class tp implements CommandExecutor {
         if (args.length == 0) {
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Uzycie: &a/tp <gracz>"));
         }
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Teleportacja do &a" + t.getName() + " &7Za &a3 &7Sekundy ."));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Teleportacja do &a" + t.getName() + " &7Za &a3 &7Sekundy."));
         BukkitRunnable task = new BukkitRunnable() {
             @Override
             public void run() {
