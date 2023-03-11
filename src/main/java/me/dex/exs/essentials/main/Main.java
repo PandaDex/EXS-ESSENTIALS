@@ -42,6 +42,7 @@ public final class Main extends JavaPlugin{
         new thunder(this);
         new noon(this);
         new midnight(this);
+        new oi(this);
         registerEvents();
         PRNTCON("EXS Zaladowany!");
         CheckUpdate();
@@ -53,7 +54,7 @@ public final class Main extends JavaPlugin{
     }
 
     public void PRNTCON(String msg) {
-        getServer().getConsoleSender().sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "EXS" + ChatColor.GRAY + "]" + ChatColor.RESET + " " + msg);
+        getServer().getConsoleSender().sendMessage(ChatColor.GRAY + "[" + ChatColor.RED + "EXS" + ChatColor.GRAY + "]" + ChatColor.RESET + " " + msg);
     }
 
     public void CheckUpdate(){

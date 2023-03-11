@@ -1,20 +1,10 @@
-# EXS-ESSENTIALS (Work in progress)
+## EXS-ESSENTIALS (Work in progress)
 
 EssentialsX type plugin but in Polish and with more features(Not now)
 
-
-
-
-
-
-
-
-
-
-
-Spis uprawnień wraz z komendami:
+### Spis komend wraz z uprawnieniami:
 + /ban - exs.ban
-+ /day - exs.world.time
++ /day - exs.time
 + /exs - brak
 + /exs reload - exs.reload
 + /exs update - exs.update
@@ -26,12 +16,14 @@ Spis uprawnień wraz z komendami:
 + /heal - exs.heal
 + /kick - exs.kick
 + /msg - exs.msg
-+ /night - exs.world.time
-+ /noon - exs.world.time
-+ /midnight - exs.world.time
++ /midnight - exs.time
++ /night - exs.time
++ /noon - exs.time
 + /nv exs.nv
-+ /sun - exs.world.weather
-+ /rain - exs.world.weather
-+ /thunder - exs.world.weather
++ /oi - exs.oi
++ /oe - exs.oe
++ /rain - exs.weather
++ /sun - exs.weather
++ /thunder - exs.weather
 + /tp - exs.tp
 + /unban - exs.unban

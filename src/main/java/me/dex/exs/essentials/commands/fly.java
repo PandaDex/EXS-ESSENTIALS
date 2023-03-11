@@ -17,6 +17,10 @@ public class fly implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Komenda tylko dla graczy!"));
+            return true;
+        }
         Player p = (Player) sender;
         World w = p.getWorld();
         if (p.getAllowFlight()) {

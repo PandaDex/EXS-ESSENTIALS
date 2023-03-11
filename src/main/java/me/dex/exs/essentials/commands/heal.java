@@ -18,13 +18,36 @@ public class heal implements CommandExecutor {
         this.plugin = plugin;
         plugin.getCommand("heal").setExecutor(this);
     }
+
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        Player p = (Player)sender;
-            for (PotionEffect effect : p.getActivePotionEffects())
-                p.removePotionEffect(effect.getType());
-            p.setHealth(20.0D);
-            p.setFireTicks(0);
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] Zostales wyleczony!"));
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Komenda tylko dla graczy!"));
             return true;
         }
+
+        Player target;
+        if (args.length == 1) {
+            target = Bukkit.getPlayer(args[0]);
+            if (target == null) {
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Gracz nie jest online! "));
+                return true;
+            }
+        } else {
+            target = (Player) sender;
+        }
+
+        for (PotionEffect effect : target.getActivePotionEffects()) {
+            target.removePotionEffect(effect.getType());
+        }
+
+        target.setHealth(20.0D);
+        target.setFireTicks(0);
+        target.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Zostales wyleczony!"));
+
+        if (target != sender) {
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Wyleczyles gracza: &a" + target.getName()));
+        }
+
+        return true;
     }
+}

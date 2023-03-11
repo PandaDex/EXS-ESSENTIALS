@@ -19,6 +19,10 @@ public class unban implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Komenda tylko dla graczy!"));
+            return true;
+        }
         Player p = (Player) sender;
         OfflinePlayer Target = plugin.getServer().getOfflinePlayer(args[0]);
         if (args.length == 0) {

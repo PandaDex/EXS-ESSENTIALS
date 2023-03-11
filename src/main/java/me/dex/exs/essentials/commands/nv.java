@@ -19,10 +19,20 @@ public class nv implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Komenda tylko dla graczy!"));
+            return true;
+        }
         Player p = (Player)sender;
         World w = p.getWorld();
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Otrzymales efekt: &aWidzenie w ciemnosci"));
-        p.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 1000000, 255, true));
+        int duration = Integer.MAX_VALUE;
+        if (p.hasPotionEffect(PotionEffectType.NIGHT_VISION)) {
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Widzenie w ciemnosci: &cWylaczono"));
+            p.removePotionEffect(PotionEffectType.NIGHT_VISION);
+        } else {
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Widzenie w ciemnosci: &aWlaczono"));
+            p.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, duration, 255, false, false, false));
+        }
         return true;
     }
 }

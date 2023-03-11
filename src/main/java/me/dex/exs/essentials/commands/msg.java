@@ -16,6 +16,10 @@ public class msg implements CommandExecutor {
         plugin.getCommand("msg").setExecutor(this);
     }
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Komenda tylko dla graczy!"));
+            return true;
+        }
         Player p = (Player)sender;
         if (args.length == 0) {
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Uzyj: &a/msg <gracz> <wiadomosc>"));

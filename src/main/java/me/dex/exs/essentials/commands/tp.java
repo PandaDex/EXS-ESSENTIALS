@@ -18,6 +18,10 @@ public class tp implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Komenda tylko dla graczy!"));
+            return true;
+        }
 
         Player p = (Player)sender;
         Player t = (Player)p.getServer().getPlayer(args[0]);
