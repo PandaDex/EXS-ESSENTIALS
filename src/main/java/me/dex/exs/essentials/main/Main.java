@@ -43,6 +43,7 @@ public final class Main extends JavaPlugin{
         new noon(this);
         new midnight(this);
         new oi(this);
+        new oe(this);
         registerEvents();
         PRNTCON("EXS Zaladowany!");
         CheckUpdate();
