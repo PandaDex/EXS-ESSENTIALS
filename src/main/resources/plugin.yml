@@ -1,11 +1,16 @@
 name: EXS-ESSENTIALS
-version: 1.9
+version: 2.0
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
 authors: [ Panda_Dex_ ]
 website: https://www.spigotmc.org/resources/exs-essentials.101530/
 commands:
+  back:
+    aliases: [ ]
+    description: Teleportuje do ostatniej pozycji.
+    permission: exs.back
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   gm:
     aliases: [ ]
     description: Zmienia gamemode gracza.
@@ -112,10 +117,12 @@ commands:
     permission: exs.oi
     permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
   oe:
-    aliases: [ ]
+    aliases: ["enderchest"]
     description: Otwiera ender chest gracza.
     permission: exs.oe
     permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
-
-
-
+  r:
+    aliases: [ ]
+    description: Szybka odpowiedz do ostatniej wiadomosci msg.
+    permission: exs.r
+    permission-message: \u00A77[\u00A7c\u00A7lEXS\u00A77] \u00A7cNie masz uprawnien do tej komendy!
