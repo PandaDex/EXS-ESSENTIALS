@@ -23,27 +23,23 @@ public final class Main extends JavaPlugin{
     @Override
     public void onEnable() {
         new gm(this);
-        new day(this);
-        new night(this);
         new nv(this);
-        new sun(this);
         new fly(this);
         new flySpeed(this);
         new god(this);
         new exs(this);
         new heal(this);
         new feed(this);
-        new tp(this);
         new msg(this);
         new kick(this);
         new ban(this);
         new unban(this);
-        new rain(this);
-        new thunder(this);
-        new noon(this);
-        new midnight(this);
         new oi(this);
         new oe(this);
+        new repair(this);
+        new Tp(this);
+        new Time(this);
+        new Weather(this);
         registerEvents();
         PRNTCON("EXS Zaladowany!");
         CheckUpdate();
@@ -61,15 +57,20 @@ public final class Main extends JavaPlugin{
     public void CheckUpdate(){
         (new Updater(this, 101530)).getLatestVersion(version -> {
             PRNTCON("Wyszukiwanie aktualizacji...");
-                    if (getDescription().getVersion().equalsIgnoreCase(version)) {
-                        PRNTCON("Uzywasz najnowszej wersji!");
-                    }else{
-                        PRNTCON("Twoja wersja EXS jest " + ChatColor.RED + "nieaktualna!");
-                        PRNTCON("Najnowsza wersja to: " + ChatColor.GREEN + version);
-                        PRNTCON("Twoja wersja to: " + ChatColor.RED + getDescription().getVersion());
-                        PRNTCON("Zaktualizuj tutaj: " + ChatColor.GREEN + "https://www.spigotmc.org/resources/exs-essentials.101530/");
-                    }
-                });
+            String currentVersion = getDescription().getVersion();
+
+            if (currentVersion.equalsIgnoreCase(version)) {
+                PRNTCON("Uzywasz najnowszej wersji!");
+            } else if (currentVersion.compareToIgnoreCase(version) < 0) {
+                PRNTCON("Twoja wersja EXS jest " + ChatColor.RED + "nieaktualna!");
+                PRNTCON("Najnowsza wersja to: " + ChatColor.GREEN + version);
+                PRNTCON("Twoja wersja to: " + ChatColor.RED + currentVersion);
+                PRNTCON("Zaktualizuj tutaj: " + ChatColor.GREEN + "https://www.spigotmc.org/resources/exs-essentials.101530/");
+            } else {
+                PRNTCON("Uzywasz najnowszej wersji!");
+            }
+
+        });
         }
 
     //god

@@ -30,7 +30,7 @@ public class unban implements CommandExecutor {
             return true;
         }
         plugin.getServer().getBanList(BanList.Type.NAME).pardon(Target.getName());
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &aGracz zostal odbanowany!"));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7[&c&lEXS&7] &7Gracz zostal odbanowany!"));
         return false;
     }
 }

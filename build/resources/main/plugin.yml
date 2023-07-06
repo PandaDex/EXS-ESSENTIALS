@@ -1,5 +1,5 @@
 name: EXS-ESSENTIALS
-version: 2.0
+version: 2.0.11
 main: me.dex.exs.essentials.main.Main
 api-version: 1.16
 prefix: EXS-ESSENTIALS
@@ -126,3 +126,9 @@ commands:
     description: Szybka odpowiedz do ostatniej wiadomosci msg.
     permission: exs.r
     permission-message: §7[§c§lEXS§7] §cNie masz uprawnien do tej komendy!
+  repair:
+    aliases: [ ]
+    description: Naprawia przedmiot w rece / wszystkie w ekwipunku.
+    permission: exs.repair
+    permission-message: §7[§c§lEXS§7] §cNie masz uprawnien do tej komendy!
+
